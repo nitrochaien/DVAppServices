@@ -14,6 +14,9 @@
 		F6BB69B61FB98DCB000147C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BB69B41FB98DCB000147C7 /* LaunchScreen.storyboard */; };
 		F6BB69C11FB98DCB000147C7 /* DVAppServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69C01FB98DCB000147C7 /* DVAppServicesTests.swift */; };
 		F6BB69CC1FB98DCB000147C7 /* DVAppServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69CB1FB98DCB000147C7 /* DVAppServicesUITests.swift */; };
+		F6BB69DB1FB98E01000147C7 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69DA1FB98E01000147C7 /* ContactsViewController.swift */; };
+		F6BB69DD1FB992C3000147C7 /* ContactEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69DC1FB992C3000147C7 /* ContactEntry.swift */; };
+		F6BB69E01FB99825000147C7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69DF1FB99825000147C7 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F6BB69C71FB98DCB000147C7 /* DVAppServicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVAppServicesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BB69CB1FB98DCB000147C7 /* DVAppServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVAppServicesUITests.swift; sourceTree = "<group>"; };
 		F6BB69CD1FB98DCB000147C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6BB69DA1FB98E01000147C7 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		F6BB69DC1FB992C3000147C7 /* ContactEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEntry.swift; sourceTree = "<group>"; };
+		F6BB69DF1FB99825000147C7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		F6BB69AA1FB98DCB000147C7 /* DVAppServices */ = {
 			isa = PBXGroup;
 			children = (
+				F6BB69DE1FB9981B000147C7 /* Utils */,
+				F6BB69D91FB98DF6000147C7 /* Contacts */,
 				F6BB69AB1FB98DCB000147C7 /* AppDelegate.swift */,
 				F6BB69AD1FB98DCB000147C7 /* ViewController.swift */,
 				F6BB69AF1FB98DCB000147C7 /* Main.storyboard */,
@@ -123,6 +131,23 @@
 				F6BB69CD1FB98DCB000147C7 /* Info.plist */,
 			);
 			path = DVAppServicesUITests;
+			sourceTree = "<group>";
+		};
+		F6BB69D91FB98DF6000147C7 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				F6BB69DA1FB98E01000147C7 /* ContactsViewController.swift */,
+				F6BB69DC1FB992C3000147C7 /* ContactEntry.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		F6BB69DE1FB9981B000147C7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F6BB69DF1FB99825000147C7 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BB69E01FB99825000147C7 /* Utils.swift in Sources */,
 				F6BB69AE1FB98DCB000147C7 /* ViewController.swift in Sources */,
 				F6BB69AC1FB98DCB000147C7 /* AppDelegate.swift in Sources */,
+				F6BB69DB1FB98E01000147C7 /* ContactsViewController.swift in Sources */,
+				F6BB69DD1FB992C3000147C7 /* ContactEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +455,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4D947669QT;
 				INFOPLIST_FILE = DVAppServices/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = namdv.DVAppServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +471,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4D947669QT;
 				INFOPLIST_FILE = DVAppServices/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = namdv.DVAppServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
