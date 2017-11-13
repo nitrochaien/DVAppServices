@@ -17,6 +17,7 @@
 		F6BB69DB1FB98E01000147C7 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69DA1FB98E01000147C7 /* ContactsViewController.swift */; };
 		F6BB69DD1FB992C3000147C7 /* ContactEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69DC1FB992C3000147C7 /* ContactEntry.swift */; };
 		F6BB69E01FB99825000147C7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69DF1FB99825000147C7 /* Utils.swift */; };
+		F6BB69E21FB9A5E6000147C7 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69E11FB9A5E6000147C7 /* AddContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F6BB69DA1FB98E01000147C7 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		F6BB69DC1FB992C3000147C7 /* ContactEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEntry.swift; sourceTree = "<group>"; };
 		F6BB69DF1FB99825000147C7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F6BB69E11FB9A5E6000147C7 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				F6BB69DA1FB98E01000147C7 /* ContactsViewController.swift */,
 				F6BB69DC1FB992C3000147C7 /* ContactEntry.swift */,
+				F6BB69E11FB9A5E6000147C7 /* AddContactViewController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				F6BB69E01FB99825000147C7 /* Utils.swift in Sources */,
 				F6BB69AE1FB98DCB000147C7 /* ViewController.swift in Sources */,
 				F6BB69AC1FB98DCB000147C7 /* AppDelegate.swift in Sources */,
+				F6BB69E21FB9A5E6000147C7 /* AddContactViewController.swift in Sources */,
 				F6BB69DB1FB98E01000147C7 /* ContactsViewController.swift in Sources */,
 				F6BB69DD1FB992C3000147C7 /* ContactEntry.swift in Sources */,
 			);

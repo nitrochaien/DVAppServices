@@ -38,10 +38,22 @@ class ContactsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        addCreateContactIcon()
         addTableView()
         addLabelLoading()
         
         showHideLoading(false)
+    }
+    
+    fileprivate func addCreateContactIcon() {
+        let createContactButton = UIBarButtonItem(barButtonSystemItem: .add
+            , target: self, action: #selector(addContact))
+        navigationItem.rightBarButtonItem = createContactButton
+    }
+    
+    @objc fileprivate func addContact(_ sender: UIBarButtonItem) {
+        let controller = AddContactViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     fileprivate func addTableView() {
