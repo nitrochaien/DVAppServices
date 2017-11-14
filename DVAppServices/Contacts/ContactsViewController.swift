@@ -9,7 +9,7 @@
 import UIKit
 import Contacts
 
-class ContactsViewController: UIViewController {
+class ContactsViewController: UIViewController, AddContactProtocol {
     
     var tableView: UITableView!
     var labelLoading: UILabel!
@@ -19,6 +19,20 @@ class ContactsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        addCreateContactIcon()
+        addTableView()
+        addLabelLoading()
+        
+        showHideLoading(false)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         requestAccessContacts { (success) in
             if success {
@@ -35,16 +49,6 @@ class ContactsViewController: UIViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        addCreateContactIcon()
-        addTableView()
-        addLabelLoading()
-        
-        showHideLoading(false)
-    }
-    
     fileprivate func addCreateContactIcon() {
         let createContactButton = UIBarButtonItem(barButtonSystemItem: .add
             , target: self, action: #selector(addContact))
@@ -53,6 +57,7 @@ class ContactsViewController: UIViewController {
     
     @objc fileprivate func addContact(_ sender: UIBarButtonItem) {
         let controller = AddContactViewController()
+        controller.delegate = self
         navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -107,6 +112,33 @@ class ContactsViewController: UIViewController {
             completion(true, contacts)
         } catch {
             completion(false, nil)
+        }
+    }
+    
+    func onCreatedNewContact(_ record: ContactEntry) {
+        let newContact = CNMutableContact()
+        newContact.givenName = record.name
+        
+        if let email = record.email {
+            let contactEmail = CNLabeledValue(label: CNLabelHome, value: email as NSString)
+            newContact.emailAddresses = [contactEmail]
+        }
+        
+        if let phone = record.phone {
+            let contactPhone = CNLabeledValue(label: CNLabelHome, value: CNPhoneNumber(stringValue: phone))
+            newContact.phoneNumbers = [contactPhone]
+        }
+        
+        if let image = record.image {
+            newContact.imageData = UIImageJPEGRepresentation(image, 0.9)
+        }
+        
+        do {
+            let request = CNSaveRequest()
+            request.add(newContact, toContainerWithIdentifier: nil)
+            try CNContactStore().execute(request)
+        } catch {
+            print("Unable to create contact!")
         }
     }
 }
