@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61254011FBAC1CB008B2F1E /* OpenContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61254001FBAC1CB008B2F1E /* OpenContactViewController.swift */; };
+		F61254031FBACEA7008B2F1E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61254021FBACEA7008B2F1E /* BaseViewController.swift */; };
 		F6BB69AC1FB98DCB000147C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69AB1FB98DCB000147C7 /* AppDelegate.swift */; };
 		F6BB69AE1FB98DCB000147C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69AD1FB98DCB000147C7 /* ViewController.swift */; };
 		F6BB69B11FB98DCB000147C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BB69AF1FB98DCB000147C7 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F61254001FBAC1CB008B2F1E /* OpenContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenContactViewController.swift; sourceTree = "<group>"; };
+		F61254021FBACEA7008B2F1E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F6BB69A81FB98DCB000147C7 /* DVAppServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVAppServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BB69AB1FB98DCB000147C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6BB69AD1FB98DCB000147C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				F6BB69DA1FB98E01000147C7 /* ContactsViewController.swift */,
 				F6BB69DC1FB992C3000147C7 /* ContactEntry.swift */,
 				F6BB69E11FB9A5E6000147C7 /* AddContactViewController.swift */,
+				F61254001FBAC1CB008B2F1E /* OpenContactViewController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				F6BB69DF1FB99825000147C7 /* Utils.swift */,
+				F61254021FBACEA7008B2F1E /* BaseViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -291,6 +297,8 @@
 				F6BB69AE1FB98DCB000147C7 /* ViewController.swift in Sources */,
 				F6BB69AC1FB98DCB000147C7 /* AppDelegate.swift in Sources */,
 				F6BB69E21FB9A5E6000147C7 /* AddContactViewController.swift in Sources */,
+				F61254011FBAC1CB008B2F1E /* OpenContactViewController.swift in Sources */,
+				F61254031FBACEA7008B2F1E /* BaseViewController.swift in Sources */,
 				F6BB69DB1FB98E01000147C7 /* ContactsViewController.swift in Sources */,
 				F6BB69DD1FB992C3000147C7 /* ContactEntry.swift in Sources */,
 			);

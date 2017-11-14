@@ -9,7 +9,7 @@
 import UIKit
 import Contacts
 
-class ContactsViewController: UIViewController, AddContactProtocol {
+class ContactsViewController: BaseViewController, AddContactProtocol {
     
     var tableView: UITableView!
     var labelLoading: UILabel!
@@ -19,10 +19,6 @@ class ContactsViewController: UIViewController, AddContactProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         
         addCreateContactIcon()
         addTableView()

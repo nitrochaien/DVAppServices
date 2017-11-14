@@ -12,7 +12,7 @@ protocol AddContactProtocol {
     func onCreatedNewContact(_ record: ContactEntry)
 }
 
-class AddContactViewController: UIViewController {
+class AddContactViewController: BaseViewController {
     
     var textfieldFirstName: UITextField!
     var textfieldLastName: UITextField!
@@ -60,6 +60,8 @@ class AddContactViewController: UIViewController {
         view.addSubview(textfieldEmail)
         view.addSubview(button)
         
+        edgesForExtendedLayout = []
+        
         let dict = ["tf1" : textfieldFirstName,
                     "tf2" : textfieldLastName,
                     "tf3" : textfieldPhoneNums,
@@ -72,7 +74,7 @@ class AddContactViewController: UIViewController {
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[tf4]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: dict))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[btn]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: dict))
         
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[tf1]-[tf2]-[tf3]-[tf4]-[btn]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: dict))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-20-[tf1]-[tf2]-[tf3]-[tf4]-[btn]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: dict))
     }
     
     @objc func onSave(_ sender: UIButton) {

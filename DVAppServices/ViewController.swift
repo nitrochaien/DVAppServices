@@ -19,5 +19,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func onClickFetch(_ sender: Any) {
+        let controller = ContactsViewController()
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    @IBAction func onClickOpen(_ sender: Any) {
+        let controller = OpenContactViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }
 
