@@ -31,5 +31,11 @@ class ViewController: UIViewController {
         let controller = OpenContactViewController()
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    @IBAction func onClickEvent(_ sender: Any) {
+        let controller = EventViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
 }
 

@@ -60,8 +60,6 @@ class AddContactViewController: BaseViewController {
         view.addSubview(textfieldEmail)
         view.addSubview(button)
         
-        edgesForExtendedLayout = []
-        
         let dict = ["tf1" : textfieldFirstName,
                     "tf2" : textfieldLastName,
                     "tf3" : textfieldPhoneNums,

@@ -12,20 +12,34 @@ import ContactsUI
 class OpenContactViewController: BaseViewController, CNContactPickerDelegate {
     
     let contactStore = CNContactStore()
+    
+    var buttonSingleContact: UIButton!
+    var buttonMultipleContacts: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let button = UIButton()
-        button.backgroundColor = .green
-        button.setTitle("Open Contacts", for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(onClick), for: .touchUpInside)
+        buttonSingleContact = UIButton()
+        buttonSingleContact.backgroundColor = .green
+        buttonSingleContact.setTitle("Open Contact", for: .normal)
+        buttonSingleContact.translatesAutoresizingMaskIntoConstraints = false
+        buttonSingleContact.addTarget(self, action: #selector(onClick), for: .touchUpInside)
         
-        view.addSubview(button)
+        view.addSubview(buttonSingleContact)
         
-        view.addConstraint(NSLayoutConstraint(item: view, attribute: .centerX, relatedBy: .equal, toItem: button, attribute: .centerX, multiplier: 1, constant: 0))
-        view.addConstraint(NSLayoutConstraint(item: view, attribute: .centerY, relatedBy: .equal, toItem: button, attribute: .centerY, multiplier: 1, constant: 0))
+        view.addConstraint(NSLayoutConstraint(item: view, attribute: .centerX, relatedBy: .equal, toItem: buttonSingleContact, attribute: .centerX, multiplier: 1, constant: 0))
+        view.addConstraint(NSLayoutConstraint(item: view, attribute: .centerY, relatedBy: .equal, toItem: buttonSingleContact, attribute: .centerY, multiplier: 1, constant: 0))
+        
+        buttonMultipleContacts = UIButton()
+        buttonMultipleContacts.backgroundColor = .green
+        buttonMultipleContacts.setTitle("Open Contacts", for: .normal)
+        buttonMultipleContacts.translatesAutoresizingMaskIntoConstraints = false
+        buttonMultipleContacts.addTarget(self, action: #selector(onClick), for: .touchUpInside)
+        
+        view.addSubview(buttonMultipleContacts)
+        
+        view.addConstraint(NSLayoutConstraint(item: view, attribute: .centerX, relatedBy: .equal, toItem: buttonMultipleContacts, attribute: .centerX, multiplier: 1, constant: 0))
+        view.addConstraint(NSLayoutConstraint(item: view, attribute: .top, relatedBy: .equal, toItem: buttonMultipleContacts, attribute: .top, multiplier: 1, constant: -24))
     }
     
     func askPermission() {
@@ -44,13 +58,25 @@ class OpenContactViewController: BaseViewController, CNContactPickerDelegate {
         }
     }
     
-    @objc func onClick() {
+    @objc func onClick(_ sender: UIButton) {
         let contactController = CNContactPickerViewController()
         contactController.delegate = self
+        if sender == buttonSingleContact {
+            //Do nothing
+        }
+        else if sender == buttonMultipleContacts {
+            contactController.predicateForEnablingContact = NSPredicate(format: "emailAddresses.@count > 0")
+        }
         present(contactController, animated: true, completion: nil)
     }
     
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
         print("Selected contact named: ", contact.givenName)
+    }
+    
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contacts: [CNContact]) {
+        for contact in contacts {
+            print("Selected contact named: ", contact.givenName)
+        }
     }
 }
