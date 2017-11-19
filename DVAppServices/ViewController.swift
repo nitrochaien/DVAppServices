@@ -37,5 +37,16 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(controller, animated: true)
     }
     
+    
+    @IBAction func onClickFacebookServices(_ sender: Any) {
+        let controller = FacebookServicesViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @IBAction func onClickGoogleServices(_ sender: Any) {
+        let controller = GoogleServicesViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
 }
 

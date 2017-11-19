@@ -16,39 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-//        showContactsViewController()
-        showFacebookServicesViewController()
-//        showGoogleServicesViewController()
+    
         self.window?.backgroundColor = .white
+        
+        configureGoogleServices()
         
         return true
     }
     
-    func showContactsViewController() {
-        let navigation = UINavigationController()
-        let controller = ContactsViewController()
-        navigation.viewControllers = [controller]
-        self.window?.rootViewController = navigation
-        self.window?.makeKeyAndVisible()
-    }
-    
-    func showFacebookServicesViewController() {
-        let navigation = UINavigationController()
-        let controller = FacebookServicesViewController()
-        navigation.viewControllers = [controller]
-        self.window?.rootViewController = navigation
-        self.window?.makeKeyAndVisible()
-    }
-    
-    func showGoogleServicesViewController() {
-        let navigation = UINavigationController()
-        let controller = GoogleServicesViewController()
-        navigation.viewControllers = [controller]
-        self.window?.rootViewController = navigation
-        self.window?.makeKeyAndVisible()
-        
-        //configure Googler Services
+    func configureGoogleServices() {
         var configureError: NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
