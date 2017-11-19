@@ -1,0 +1,6 @@
+framework module Pods_DVAppServices {
+  umbrella header "Pods-DVAppServices-umbrella.h"
+
+  export *
+  module * { export * }
+}
