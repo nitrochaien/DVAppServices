@@ -15,6 +15,7 @@
 		EDD2686A1FBF50B10028CF1A /* FacebookServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD268691FBF50B10028CF1A /* FacebookServicesViewController.swift */; };
 		EDE0304E1FC02E0A0016E878 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE0304D1FC02E0A0016E878 /* GoogleService-Info.plist */; };
 		EDE030541FC124650016E878 /* GoogleServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE030531FC124650016E878 /* GoogleServicesViewController.swift */; };
+		F60015341FCD4E5D00E0CD52 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60015331FCD4E5D00E0CD52 /* SocialViewController.swift */; };
 		F605A0211FBD40980080E459 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605A0201FBD40980080E459 /* EventViewController.swift */; };
 		F61254011FBAC1CB008B2F1E /* OpenContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61254001FBAC1CB008B2F1E /* OpenContactViewController.swift */; };
 		F61254031FBACEA7008B2F1E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61254021FBACEA7008B2F1E /* BaseViewController.swift */; };
@@ -60,6 +61,8 @@
 		EDE0304D1FC02E0A0016E878 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDE0304F1FC11F720016E878 /* DVAppServices-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DVAppServices-Bridging-Header.h"; sourceTree = "<group>"; };
 		EDE030531FC124650016E878 /* GoogleServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleServicesViewController.swift; sourceTree = "<group>"; };
+		F60015331FCD4E5D00E0CD52 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		F60015351FCD51D300E0CD52 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F605A0201FBD40980080E459 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		F61254001FBAC1CB008B2F1E /* OpenContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenContactViewController.swift; sourceTree = "<group>"; };
 		F61254021FBACEA7008B2F1E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 		3FAE667314B2520668646D3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F60015351FCD51D300E0CD52 /* Social.framework */,
 				ED9F1DBE1FC19BC4002D3B39 /* FacebookCore.framework */,
 				ED9F1DBA1FC19AE3002D3B39 /* FBSDKCoreKit.framework */,
 				ED9F1DBB1FC19AE3002D3B39 /* FBSDKLoginKit.framework */,
@@ -147,6 +151,14 @@
 				EDE030531FC124650016E878 /* GoogleServicesViewController.swift */,
 			);
 			path = GoogleServices;
+			sourceTree = "<group>";
+		};
+		F60015321FCD4E4C00E0CD52 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				F60015331FCD4E5D00E0CD52 /* SocialViewController.swift */,
+			);
+			path = Social;
 			sourceTree = "<group>";
 		};
 		F605A01F1FBD40710080E459 /* Calendar */ = {
@@ -193,6 +205,7 @@
 				F6BB69B71FB98DCB000147C7 /* Info.plist */,
 				F6BB69B41FB98DCB000147C7 /* LaunchScreen.storyboard */,
 				F6BB69AF1FB98DCB000147C7 /* Main.storyboard */,
+				F60015321FCD4E4C00E0CD52 /* Social */,
 				F6BB69DE1FB9981B000147C7 /* Utils */,
 				F6BB69AD1FB98DCB000147C7 /* ViewController.swift */,
 			);
@@ -456,6 +469,7 @@
 				EDD2686A1FBF50B10028CF1A /* FacebookServicesViewController.swift in Sources */,
 				F6BB69E01FB99825000147C7 /* Utils.swift in Sources */,
 				EDE030541FC124650016E878 /* GoogleServicesViewController.swift in Sources */,
+				F60015341FCD4E5D00E0CD52 /* SocialViewController.swift in Sources */,
 				F6BB69AE1FB98DCB000147C7 /* ViewController.swift in Sources */,
 				F6BB69AC1FB98DCB000147C7 /* AppDelegate.swift in Sources */,
 				F6BB69E21FB9A5E6000147C7 /* AddContactViewController.swift in Sources */,

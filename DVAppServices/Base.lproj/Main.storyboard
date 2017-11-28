@@ -64,6 +64,16 @@
                                     <action selector="onClickGoogleServices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWr-Pj-3yI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-BD-XFU">
+                                <rect key="frame" x="8" y="262" width="359" height="30"/>
+                                <color key="backgroundColor" red="0.25946694864165165" green="0.98796771532149719" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Social">
+                                    <color key="titleColor" red="0.50980392159999999" green="0.56078431370000004" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSocial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwS-z1-bYo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -73,10 +83,13 @@
                             <constraint firstItem="g3u-xG-UQA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="H72-hm-5iu"/>
                             <constraint firstItem="Leb-oI-8zq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="SRd-NZ-f1e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g3u-xG-UQA" secondAttribute="trailing" constant="8" id="TeD-rG-Vtt"/>
+                            <constraint firstItem="4fm-BD-XFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="U3l-XU-p2I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4fm-BD-XFU" secondAttribute="trailing" constant="8" id="Ulw-ci-gFg"/>
                             <constraint firstItem="FPk-PC-VJ6" firstAttribute="top" secondItem="Vk1-tC-mwV" secondAttribute="bottom" constant="8" id="VAF-yM-Ny1"/>
                             <constraint firstItem="C2i-xi-nJn" firstAttribute="top" secondItem="FPk-PC-VJ6" secondAttribute="bottom" constant="8" id="VSK-ih-USp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Leb-oI-8zq" secondAttribute="trailing" constant="8" id="YhW-wW-cyI"/>
                             <constraint firstItem="FPk-PC-VJ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="nnK-el-X5M"/>
+                            <constraint firstItem="4fm-BD-XFU" firstAttribute="top" secondItem="C2i-xi-nJn" secondAttribute="bottom" constant="8" id="qzJ-9Y-ZOq"/>
                             <constraint firstItem="Vk1-tC-mwV" firstAttribute="top" secondItem="Leb-oI-8zq" secondAttribute="bottom" constant="8" id="rnY-nw-4rh"/>
                             <constraint firstItem="g3u-xG-UQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="s4b-Qt-26Q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vk1-tC-mwV" secondAttribute="trailing" constant="8" id="sKE-h4-gIA"/>

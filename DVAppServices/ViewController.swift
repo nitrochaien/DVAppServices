@@ -48,5 +48,9 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(controller, animated: true)
     }
     
+    @IBAction func onClickSocial(_ sender: Any) {
+        let controller = SocialViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }
 
