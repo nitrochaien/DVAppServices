@@ -37,7 +37,6 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    
     @IBAction func onClickFacebookServices(_ sender: Any) {
         let controller = FacebookServicesViewController()
         navigationController?.pushViewController(controller, animated: true)
@@ -50,6 +49,11 @@ class ViewController: UIViewController {
     
     @IBAction func onClickSocial(_ sender: Any) {
         let controller = SocialViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @IBAction func onClickDownloadAnimation(_ sender: Any) {
+        let controller = DownloadAnimationViewController()
         navigationController?.pushViewController(controller, animated: true)
     }
 }

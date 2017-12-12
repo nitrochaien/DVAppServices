@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A6q-7o-s1e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A6q-7o-s1e">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -74,13 +74,25 @@
                                     <action selector="onClickSocial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwS-z1-bYo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a73-T2-fEl">
+                                <rect key="frame" x="8" y="300" width="359" height="30"/>
+                                <color key="backgroundColor" red="0.33571985970000001" green="1" blue="0.2787602106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Download Animation">
+                                    <color key="titleColor" red="1" green="0.2507572773062996" blue="0.86642366250360336" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickDownloadAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ok0-QO-BuE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vk1-tC-mwV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="4xo-oS-pEW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FPk-PC-VJ6" secondAttribute="trailing" constant="8" id="9dY-7w-pc5"/>
                             <constraint firstItem="Leb-oI-8zq" firstAttribute="top" secondItem="g3u-xG-UQA" secondAttribute="bottom" constant="8" id="BNm-Ei-eNm"/>
+                            <constraint firstItem="a73-T2-fEl" firstAttribute="top" secondItem="4fm-BD-XFU" secondAttribute="bottom" constant="8" id="DrJ-oD-nTO"/>
                             <constraint firstItem="g3u-xG-UQA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="H72-hm-5iu"/>
+                            <constraint firstItem="a73-T2-fEl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Jvy-r0-1Uz"/>
                             <constraint firstItem="Leb-oI-8zq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="SRd-NZ-f1e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g3u-xG-UQA" secondAttribute="trailing" constant="8" id="TeD-rG-Vtt"/>
                             <constraint firstItem="4fm-BD-XFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="U3l-XU-p2I"/>
@@ -95,6 +107,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vk1-tC-mwV" secondAttribute="trailing" constant="8" id="sKE-h4-gIA"/>
                             <constraint firstItem="C2i-xi-nJn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="tME-JE-pT9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C2i-xi-nJn" secondAttribute="trailing" constant="8" id="vRe-mA-w0W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a73-T2-fEl" secondAttribute="trailing" constant="8" id="wBw-dn-Z6p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

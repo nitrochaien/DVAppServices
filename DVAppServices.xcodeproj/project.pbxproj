@@ -19,6 +19,7 @@
 		F605A0211FBD40980080E459 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605A0201FBD40980080E459 /* EventViewController.swift */; };
 		F61254011FBAC1CB008B2F1E /* OpenContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61254001FBAC1CB008B2F1E /* OpenContactViewController.swift */; };
 		F61254031FBACEA7008B2F1E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61254021FBACEA7008B2F1E /* BaseViewController.swift */; };
+		F63A951C1FDFB8490038AB38 /* DownloadAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A951B1FDFB8490038AB38 /* DownloadAnimationViewController.swift */; };
 		F6BB69AC1FB98DCB000147C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69AB1FB98DCB000147C7 /* AppDelegate.swift */; };
 		F6BB69AE1FB98DCB000147C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69AD1FB98DCB000147C7 /* ViewController.swift */; };
 		F6BB69B11FB98DCB000147C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BB69AF1FB98DCB000147C7 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		F605A0201FBD40980080E459 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		F61254001FBAC1CB008B2F1E /* OpenContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenContactViewController.swift; sourceTree = "<group>"; };
 		F61254021FBACEA7008B2F1E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F63A951B1FDFB8490038AB38 /* DownloadAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAnimationViewController.swift; sourceTree = "<group>"; };
 		F6BB69A81FB98DCB000147C7 /* DVAppServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVAppServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BB69AB1FB98DCB000147C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6BB69AD1FB98DCB000147C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
+		F63A951A1FDFB8390038AB38 /* DownloadAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F63A951B1FDFB8490038AB38 /* DownloadAnimationViewController.swift */,
+			);
+			path = DownloadAnimation;
+			sourceTree = "<group>";
+		};
 		F6BB699F1FB98DCB000147C7 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 				F6BB69B21FB98DCB000147C7 /* Assets.xcassets */,
 				F605A01F1FBD40710080E459 /* Calendar */,
 				F6BB69D91FB98DF6000147C7 /* Contacts */,
+				F63A951A1FDFB8390038AB38 /* DownloadAnimation */,
 				EDE0304F1FC11F720016E878 /* DVAppServices-Bridging-Header.h */,
 				EDD268681FBF50A10028CF1A /* FacebookServices */,
 				EDE0304D1FC02E0A0016E878 /* GoogleService-Info.plist */,
@@ -466,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63A951C1FDFB8490038AB38 /* DownloadAnimationViewController.swift in Sources */,
 				EDD2686A1FBF50B10028CF1A /* FacebookServicesViewController.swift in Sources */,
 				F6BB69E01FB99825000147C7 /* Utils.swift in Sources */,
 				EDE030541FC124650016E878 /* GoogleServicesViewController.swift in Sources */,
