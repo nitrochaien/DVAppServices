@@ -28,7 +28,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leb-oI-8zq">
                                 <rect key="frame" x="8" y="110" width="359" height="30"/>
-                                <color key="backgroundColor" red="0.50980392159999999" green="0.56078431370000004" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.61014053700000004" blue="0.47826874270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="ContactsUI"/>
                                 <connections>
                                     <action selector="onClickOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLp-BA-UqP"/>
@@ -36,52 +36,50 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vk1-tC-mwV">
                                 <rect key="frame" x="8" y="148" width="359" height="30"/>
-                                <color key="backgroundColor" red="0.33571985973540275" green="1" blue="0.2787602106019047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="EventKit">
-                                    <color key="titleColor" red="1" green="0.61014053700000004" blue="0.47826874270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="backgroundColor" red="1" green="0.61014053700000004" blue="0.47826874270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="EventKit"/>
                                 <connections>
                                     <action selector="onClickEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RcR-7D-nMa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-PC-VJ6">
                                 <rect key="frame" x="8" y="186" width="359" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Facebook Services">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="backgroundColor" red="1" green="0.61014053700000004" blue="0.47826874270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Facebook Services"/>
                                 <connections>
                                     <action selector="onClickFacebookServices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQ9-4S-K3Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2i-xi-nJn">
                                 <rect key="frame" x="8" y="224" width="359" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.2292423321" blue="0.1218706644" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Google Services">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="backgroundColor" red="1" green="0.61014053700000004" blue="0.47826874270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Google Services"/>
                                 <connections>
                                     <action selector="onClickGoogleServices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWr-Pj-3yI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-BD-XFU">
                                 <rect key="frame" x="8" y="262" width="359" height="30"/>
-                                <color key="backgroundColor" red="0.25946694864165165" green="0.98796771532149719" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Social">
-                                    <color key="titleColor" red="0.50980392159999999" green="0.56078431370000004" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="backgroundColor" red="1" green="0.61014053700000004" blue="0.47826874270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Social"/>
                                 <connections>
                                     <action selector="onClickSocial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwS-z1-bYo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a73-T2-fEl">
                                 <rect key="frame" x="8" y="300" width="359" height="30"/>
-                                <color key="backgroundColor" red="0.33571985970000001" green="1" blue="0.2787602106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Download Animation">
-                                    <color key="titleColor" red="1" green="0.2507572773062996" blue="0.86642366250360336" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="backgroundColor" red="1" green="0.61014053700000004" blue="0.47826874270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Download Animation"/>
                                 <connections>
                                     <action selector="onClickDownloadAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ok0-QO-BuE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlz-se-qFB">
+                                <rect key="frame" x="8" y="338" width="359" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.61014053700000004" blue="0.47826874270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SHA256"/>
+                                <connections>
+                                    <action selector="onClickSHA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cb8-xU-Ey6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,9 +88,11 @@
                             <constraint firstItem="Vk1-tC-mwV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="4xo-oS-pEW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FPk-PC-VJ6" secondAttribute="trailing" constant="8" id="9dY-7w-pc5"/>
                             <constraint firstItem="Leb-oI-8zq" firstAttribute="top" secondItem="g3u-xG-UQA" secondAttribute="bottom" constant="8" id="BNm-Ei-eNm"/>
+                            <constraint firstItem="nlz-se-qFB" firstAttribute="leading" secondItem="a73-T2-fEl" secondAttribute="leading" id="DbO-8a-kk3"/>
                             <constraint firstItem="a73-T2-fEl" firstAttribute="top" secondItem="4fm-BD-XFU" secondAttribute="bottom" constant="8" id="DrJ-oD-nTO"/>
                             <constraint firstItem="g3u-xG-UQA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="H72-hm-5iu"/>
                             <constraint firstItem="a73-T2-fEl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Jvy-r0-1Uz"/>
+                            <constraint firstItem="nlz-se-qFB" firstAttribute="top" secondItem="a73-T2-fEl" secondAttribute="bottom" constant="8" id="Nk6-MJ-cTb"/>
                             <constraint firstItem="Leb-oI-8zq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="SRd-NZ-f1e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g3u-xG-UQA" secondAttribute="trailing" constant="8" id="TeD-rG-Vtt"/>
                             <constraint firstItem="4fm-BD-XFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="U3l-XU-p2I"/>
@@ -101,6 +101,7 @@
                             <constraint firstItem="C2i-xi-nJn" firstAttribute="top" secondItem="FPk-PC-VJ6" secondAttribute="bottom" constant="8" id="VSK-ih-USp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Leb-oI-8zq" secondAttribute="trailing" constant="8" id="YhW-wW-cyI"/>
                             <constraint firstItem="FPk-PC-VJ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="nnK-el-X5M"/>
+                            <constraint firstItem="nlz-se-qFB" firstAttribute="trailing" secondItem="a73-T2-fEl" secondAttribute="trailing" id="p1G-bY-XgX"/>
                             <constraint firstItem="4fm-BD-XFU" firstAttribute="top" secondItem="C2i-xi-nJn" secondAttribute="bottom" constant="8" id="qzJ-9Y-ZOq"/>
                             <constraint firstItem="Vk1-tC-mwV" firstAttribute="top" secondItem="Leb-oI-8zq" secondAttribute="bottom" constant="8" id="rnY-nw-4rh"/>
                             <constraint firstItem="g3u-xG-UQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="s4b-Qt-26Q"/>

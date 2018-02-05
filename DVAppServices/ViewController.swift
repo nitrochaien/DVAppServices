@@ -56,5 +56,10 @@ class ViewController: UIViewController {
         let controller = DownloadAnimationViewController()
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    @IBAction func onClickSHA(_ sender: Any) {
+        let controller = SHA256ViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }
 

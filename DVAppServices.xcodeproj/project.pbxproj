@@ -31,6 +31,8 @@
 		F6BB69DD1FB992C3000147C7 /* ContactEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69DC1FB992C3000147C7 /* ContactEntry.swift */; };
 		F6BB69E01FB99825000147C7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69DF1FB99825000147C7 /* Utils.swift */; };
 		F6BB69E21FB9A5E6000147C7 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB69E11FB9A5E6000147C7 /* AddContactViewController.swift */; };
+		F6EE6FF220245A9E001E276E /* SHA256ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE6FF120245A9E001E276E /* SHA256ViewController.swift */; };
+		F6EE6FF420245AB6001E276E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE6FF320245AB6001E276E /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		F6BB69DC1FB992C3000147C7 /* ContactEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEntry.swift; sourceTree = "<group>"; };
 		F6BB69DF1FB99825000147C7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F6BB69E11FB9A5E6000147C7 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		F6EE6FF120245A9E001E276E /* SHA256ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256ViewController.swift; sourceTree = "<group>"; };
+		F6EE6FF320245AB6001E276E /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,7 @@
 				F6BB69B71FB98DCB000147C7 /* Info.plist */,
 				F6BB69B41FB98DCB000147C7 /* LaunchScreen.storyboard */,
 				F6BB69AF1FB98DCB000147C7 /* Main.storyboard */,
+				F6EE6FF020245A8F001E276E /* SHA256 */,
 				F60015321FCD4E4C00E0CD52 /* Social */,
 				F6BB69DE1FB9981B000147C7 /* Utils */,
 				F6BB69AD1FB98DCB000147C7 /* ViewController.swift */,
@@ -255,10 +260,19 @@
 		F6BB69DE1FB9981B000147C7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F6EE6FF320245AB6001E276E /* String+Ext.swift */,
 				F6BB69DF1FB99825000147C7 /* Utils.swift */,
 				F61254021FBACEA7008B2F1E /* BaseViewController.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F6EE6FF020245A8F001E276E /* SHA256 */ = {
+			isa = PBXGroup;
+			children = (
+				F6EE6FF120245A9E001E276E /* SHA256ViewController.swift */,
+			);
+			path = SHA256;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,11 +496,13 @@
 				F6BB69E01FB99825000147C7 /* Utils.swift in Sources */,
 				EDE030541FC124650016E878 /* GoogleServicesViewController.swift in Sources */,
 				F60015341FCD4E5D00E0CD52 /* SocialViewController.swift in Sources */,
+				F6EE6FF220245A9E001E276E /* SHA256ViewController.swift in Sources */,
 				F6BB69AE1FB98DCB000147C7 /* ViewController.swift in Sources */,
 				F6BB69AC1FB98DCB000147C7 /* AppDelegate.swift in Sources */,
 				F6BB69E21FB9A5E6000147C7 /* AddContactViewController.swift in Sources */,
 				F61254011FBAC1CB008B2F1E /* OpenContactViewController.swift in Sources */,
 				F605A0211FBD40980080E459 /* EventViewController.swift in Sources */,
+				F6EE6FF420245AB6001E276E /* String+Ext.swift in Sources */,
 				F61254031FBACEA7008B2F1E /* BaseViewController.swift in Sources */,
 				F6BB69DB1FB98E01000147C7 /* ContactsViewController.swift in Sources */,
 				F6BB69DD1FB992C3000147C7 /* ContactEntry.swift in Sources */,

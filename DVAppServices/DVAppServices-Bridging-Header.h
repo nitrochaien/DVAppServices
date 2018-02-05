@@ -4,3 +4,4 @@
 
 #import <Google/SignIn.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <CommonCrypto/CommonHMAC.h>
