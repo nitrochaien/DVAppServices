@@ -61,5 +61,10 @@ class ViewController: UIViewController {
         let controller = SHA256ViewController()
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    @IBAction func onClickTouchIDAuth(_ sender: Any) {
+        let controller = TouchIDViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }
 

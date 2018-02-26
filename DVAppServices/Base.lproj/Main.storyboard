@@ -82,6 +82,14 @@
                                     <action selector="onClickSHA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cb8-xU-Ey6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPs-Rk-MMv">
+                                <rect key="frame" x="8" y="376" width="359" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.61014053700000004" blue="0.47826874270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Touch ID Auth"/>
+                                <connections>
+                                    <action selector="onClickTouchIDAuth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jac-S5-x2x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -100,8 +108,10 @@
                             <constraint firstItem="FPk-PC-VJ6" firstAttribute="top" secondItem="Vk1-tC-mwV" secondAttribute="bottom" constant="8" id="VAF-yM-Ny1"/>
                             <constraint firstItem="C2i-xi-nJn" firstAttribute="top" secondItem="FPk-PC-VJ6" secondAttribute="bottom" constant="8" id="VSK-ih-USp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Leb-oI-8zq" secondAttribute="trailing" constant="8" id="YhW-wW-cyI"/>
+                            <constraint firstItem="hPs-Rk-MMv" firstAttribute="leading" secondItem="nlz-se-qFB" secondAttribute="leading" id="bca-dU-IWS"/>
                             <constraint firstItem="FPk-PC-VJ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="nnK-el-X5M"/>
                             <constraint firstItem="nlz-se-qFB" firstAttribute="trailing" secondItem="a73-T2-fEl" secondAttribute="trailing" id="p1G-bY-XgX"/>
+                            <constraint firstItem="hPs-Rk-MMv" firstAttribute="trailing" secondItem="nlz-se-qFB" secondAttribute="trailing" id="phe-ia-52e"/>
                             <constraint firstItem="4fm-BD-XFU" firstAttribute="top" secondItem="C2i-xi-nJn" secondAttribute="bottom" constant="8" id="qzJ-9Y-ZOq"/>
                             <constraint firstItem="Vk1-tC-mwV" firstAttribute="top" secondItem="Leb-oI-8zq" secondAttribute="bottom" constant="8" id="rnY-nw-4rh"/>
                             <constraint firstItem="g3u-xG-UQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="s4b-Qt-26Q"/>
@@ -109,6 +119,7 @@
                             <constraint firstItem="C2i-xi-nJn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="tME-JE-pT9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C2i-xi-nJn" secondAttribute="trailing" constant="8" id="vRe-mA-w0W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a73-T2-fEl" secondAttribute="trailing" constant="8" id="wBw-dn-Z6p"/>
+                            <constraint firstItem="hPs-Rk-MMv" firstAttribute="top" secondItem="nlz-se-qFB" secondAttribute="bottom" constant="8" id="xrh-HF-d0i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
